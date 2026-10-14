@@ -1,0 +1,39 @@
+Phần 1: Phân tích lỗi
+Trong đoạn Markdown có 5 lỗi cú pháp khiến trang render sai:
+
+Heading 3 (###Lưu ý quan trọng): Thiếu khoảng trắng sau dấu ###.
+
+Hậu quả: Không hiển thị thành tiêu đề, hệ thống biến nó thành chữ thô kèm ba dấu #.
+
+Danh sách (-Bước 1 đến -Bước 4): Thiếu khoảng trắng sau dấu -.
+
+Hậu quả: Không hiển thị dấu chấm đầu dòng, các dòng bị dính liền thành đoạn văn thô.
+
+Đường dẫn ([GitHub](github.com)): Thiếu giao thức https:// ở đầu URL.
+
+Hậu quả: Trình duyệt hiểu nhầm đây là đường dẫn nội bộ, khi người dùng bấm vào sẽ dẫn đến trang báo lỗi 404 Not Found.
+
+In đậm (**HNKS25CNTT1_IT101_Session08): Thiếu cặp dấu ** để đóng chuỗi ở cuối.
+
+Hậu quả: Không in đậm được, hoặc làm chữ bị in đậm lan sang các đoạn văn bản phía sau.
+
+In nghiêng / In đậm (*Nộp muộn sẽ bị trừ 50% điểm!**): Mở bằng một dấu * (in nghiêng) nhưng lại đóng bằng hai dấu ** (in đậm).
+
+Hậu quả: Lỗi định dạng, dòng chữ không được in nghiêng hoặc in đậm đúng ý và làm lộ ký tự * thừa trên màn hình.
+
+Phần 2: Sửa lỗi
+1. Đoạn Markdown chuẩn
+Markdown
+## Hướng Dẫn Nộp Bài Tập - Session 08
+
+### Lưu ý quan trọng
+
+Các bước nộp bài:
+- Bước 1: Tạo tài khoản GitHub tại [GitHub](https://github.com)
+- Bước 2: Tạo repository mới đặt tên theo định dạng **HNKS25CNTT1_IT101_Session08**
+- Bước 3: Upload file .md của bài làm lên repository
+- Bước 4: Copy đường dẫn và nộp lên Portal
+
+> Deadline: Chủ nhật 23:59 — *Nộp muộn sẽ bị trừ 50% điểm!*
+2. Trả lời Bẫy dữ liệu
+Nếu sinh viên quên gõ https:// ở đầu link, hệ thống sẽ hiểu đó là đường dẫn tương đối thuộc trang web hiện tại. Khi click vào, trình duyệt tự động nối đuôi địa chỉ đó vào URL của trang hiện tại, dẫn đến việc trang web báo lỗi 404 Not Found.
